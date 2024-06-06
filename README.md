@@ -1,6 +1,5 @@
 # SoundWave
 
-![SoundWave Logo](assets/img/LogoEntero.png)
 ## ¿Que es SoundWave?
 **SoundWave** es una plataforma web que actúa como almacenamiento y reproductor en 
 línea. Permite a los usuarios cargar archivos de audio y reproducirlos en cualquier 
@@ -54,6 +53,8 @@ Para ofrecer una visión clara y estructurada de todas las funcionalidades dispo
 - **Reproductor de Audio**
 - **Términos de Uso y Privacidad**
 - **Navegación**
+
+![SoundWave Logo](assets/img/logo.jpg)
 
 ## Términos de Uso y Privacidad
 
