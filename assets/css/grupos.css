@@ -1,0 +1,444 @@
+/* Estilos para el menú desplegable */
+.columna-izquierda {
+    position: fixed;
+    top: 0;
+    left: -100vh;
+    /* Ocultar el menú por defecto */
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-right: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1em;
+    transition: left 0.3s;
+    /* Agregar transición suave para el efecto de deslizamiento */
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.columna-izquierda.open {
+    left: 0;
+    /* Mostrar el menú cuando está abierto */
+}
+
+
+
+
+.columna-todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1aad;
+    backdrop-filter: blur(5px);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1vh;
+    height: 100%;
+    flex: 0 0 auto;
+    width: 47%;
+}
+
+.columna-todos h2 {
+    margin: 1vh 0;
+    text-align: center;
+}
+
+.columna-todos h1 {
+    margin: 1vh;
+}
+
+
+.col-6.derecha-grupos {
+    width: calc(50% - 10px);
+    /* Calcula el ancho como el 50% menos 10px de espacio entre las columnas */
+}
+
+.grupo-lista li img {
+    width: 15%;
+    height: 15%;
+    border-radius: 10%;
+    margin-right: 4vh;
+
+}
+
+.grupo-lista {
+    padding: 0;
+    margin: 0;
+}
+
+.grupo-lista li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1vh;
+    width: 100%;
+    margin-bottom: 1vh;
+    transition: 0.1s;
+    justify-content: space-between;
+}
+
+.grupo-lista li:hover {
+    background-color: var(--alternative-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grupo-lista li i {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1vh;
+    color: var(--secondary-color);
+}
+
+#nuevo-grupo {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+}
+
+#nuevo-grupo:hover {
+    transform: scale(0.95);
+}
+
+#crear {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+}
+
+#crear:hover {
+    transform: scale(0.95);
+}
+
+.grupos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-height: 65vh;
+    /* Ajusta este valor según tus necesidades */
+    overflow-y: auto;
+    /* Habilita el scroll vertical cuando sea necesario */
+    scrollbar-color: var(--secondary-color) var(--alternative-color);
+}
+
+/* ADMINISTRAR GRUPOS */
+
+
+.derecha-grupos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px !important;
+}
+
+.derecha-grupos h2 {
+    margin: 1vh 0;
+    text-align: center;
+}
+
+.columna-adm-grupos {
+    background-color: #1a1a1aad;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    /* background: linear-gradient(to top, var(--secondary-color), var(--main-color)) 0% 0% / 100% 100% no-repeat; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 48%;
+    max-height: 48vh;
+    max-height: 48vh;
+
+}
+
+.scroll-list {
+    width: 70%;
+    max-height: 83%;
+    /* Ajusta este valor según tus necesidades */
+    overflow-y: auto;
+    /* Habilita el scroll vertical cuando sea necesario */
+
+}
+
+.columna-adm-grupos h2 {
+    margin: 1vh 0;
+    text-align: center;
+}
+
+
+.archivo-lista {
+    list-style-type: none;
+    /* Esto quita los puntos de la lista desordenada */
+    counter-reset: item;
+    /* Esto inicia el contador para los números de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.archivo-lista li {
+    display: flex;
+    text-align: left;
+    padding: 1vh;
+    width: 100%;
+    margin-bottom: 1vh;
+    transition: 0.1s;
+    justify-content: space-between;
+}
+
+.archivo-lista li:hover {
+    background-color: var(--alternative-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.archivo-lista li:before {
+    margin-right: 1vh;
+    content: counter(item) ". ";
+    /* Esto agrega el número antes de cada elemento de la lista */
+    counter-increment: item;
+    /* Esto incrementa el contador para los números de la lista */
+}
+
+.archivo-lista li {
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    margin-right: auto;
+}
+
+.duration {
+    margin-right: 10px;
+}
+
+.archivo-lista li i {
+    cursor: pointer;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+    color: var(--secondary-color);
+}
+
+.archivo-lista li i:hover {
+    color: var(--text-color-secondary);
+}
+
+/* Añadir Archivo */
+
+.busqueda input {
+    text-align: center;
+    width: 90%;
+    /* Aumentamos el ancho del input */
+    height: 40px;
+    /* Ajustamos la altura */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--alternative-color);
+    color: var(--text-color);
+}
+
+#nombre-grupo {
+    text-align: center;
+    width: 90%;
+    /* Aumentamos el ancho del input */
+    height: 40px;
+    /* Ajustamos la altura */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--alternative-color);
+    color: var(--text-color);
+}
+
+#nuevo-grupo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.busqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.lista-archivos {
+    display: flex;
+    width: 70%;
+    height: 65%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.archivos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.archivos li {
+    display: flex;
+    text-align: left;
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 0.5em;
+    transition: 0.1s;
+    justify-content: space-between;
+}
+
+
+.archivos li:hover {
+    background-color: var(--alternative-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.archivos li {
+    display: flex;
+    align-items: center;
+}
+
+.nombre-archivo {
+    margin-right: auto;
+}
+
+.duracion {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.archivos li i {
+    cursor: pointer;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+    color: var(--secondary-color);
+}
+
+.archivos li i:hover {
+    color: var(--text-color-secondary);
+}
+.activo {
+    background-color: var(--alternative-color);
+    border-radius: 5px;
+}
+
+
+/* Estilos para el botón del menú */
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 3vh;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 768px) {
+
+
+    .columna-todos {
+        width: 100%;
+        height: 45vh;
+
+    }
+
+    .derecha-grupos {
+        display: flex;
+        flex-direction: row;
+        width: 53.1% !important;
+        justify-content: space-between;
+    }
+
+    .columna-adm-grupos {
+        width: 95%;
+        height: 100%;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .columna-adm-grupos ul {
+        width: 100%;
+        font-size: small;
+    }
+
+    .file-name {
+        font-size: small;
+    }   
+} */
+
+@media (max-width: 600px) {
+    .derecha-grupos {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        height: 25vh;
+    }
+
+    .columna-adm-grupos {
+        width: 100%;
+        height: 100%;
+    }
+
+    .columna-adm-grupos ul {
+        width: 100%;
+        font-size: small;
+    }
+
+    .file-name {
+        font-size: small;
+    }
+
+    .busqueda input {
+        width: 90%;
+        height: 30px;
+        margin: 0px !important;
+    }
+
+    #nombre-grupo {
+        width: 70%;
+        height: 30px;
+        margin: 0px !important;
+    }
+}
+

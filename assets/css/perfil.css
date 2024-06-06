@@ -1,0 +1,147 @@
+/* Estilos para la columna del centro */
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.perfil-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+/* Estilos para la información del perfil */
+.perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2b9f;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    margin: 4vh;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para la imagen de perfil */
+.perfil-img img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
+}
+
+/* Estilos para los datos del perfil */
+.perfil-data {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.data-box {
+    text-align: center;
+    width: 20%;
+    margin: 1em;
+}
+
+.data-number {
+    font-size: 1.5em;
+}
+
+.perfil-data p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones de perfil */
+.perfil-options {
+    display: flex;
+    justify-content: center;
+}
+
+.close-profile {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Estilos para la sección de tus grupos */
+.tus-grupos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .perfil-info {
+        flex-direction: column;
+    }
+
+    .perfil-data {
+        width: 100%;
+        
+    }
+
+    .data-box {
+        width: 30%;
+    }
+
+    .close-profile {
+        margin-top: 20px;
+    }
+
+    .perfil-img img {
+        width: 10vh;
+        height: 10vh;
+    }
+}   
+
+
+/* Estilos para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+
+    .perfil-data {
+        width: 100%;
+        margin: 0; /* Añadido */
+        padding: 0; /* Añadido */
+    }
+
+    .data-box p {
+        font-size: 0.8em;
+        margin: 0; /* Añadido */
+        padding: 0; /* Añadido */
+    }
+
+    .close-profile {
+        margin-top: 0; /* Cambiado de 20px a 0 */
+        padding: 0; /* Añadido */
+    }
+
+    .perfil-img img {
+        width: 10vh;
+        height: 10vh;
+        margin: 0; /* Añadido */
+        padding: 0; /* Añadido */
+    }
+}

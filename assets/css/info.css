@@ -1,0 +1,122 @@
+/* Estilos generales para la página de información */
+.info {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2em;
+}
+
+.info h1 {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.info h2, .info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+}
+
+.info p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.info ul li {
+    background-color: var(--alternative-color);
+    color: var(--text-color);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.info ul li i {
+    margin-right: 0.5em;
+}
+
+.info hr {
+    border: 1px solid var(--secondary-color);
+    margin: 2em 0;
+}
+
+.info .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info .menu ul {
+    padding: 0;
+}
+
+.logoinfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info .menu ul li {
+    display: flex;
+    align-items: center;
+    background-color: var(--alternative-color);
+    color: var(--text-color);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.info .menu ul li i {
+    margin-right: 0.5em;
+}
+
+.info .terms {
+    margin-top: 2em;
+}
+
+.info .terms h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+}
+
+.info .terms p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.info .terms ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.info .terms ul li {
+    background-color: var(--alternative-color);
+    color: var(--text-color);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.info .terms ul li i {
+    margin-right: 0.5em;
+}
+
+
+.info i{
+    color: var(--secondary-color);
+}

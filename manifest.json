@@ -1,0 +1,19 @@
+{
+    "name": "SoundWave",
+    "short_name": "SW",
+    "start_url": "http://pi.diiesmurgi.org/~juancarlos",
+    "display": "fullscreen",
+    "theme_color": "#F9FF01",
+    "background_color": "#1a1a1a",
+    "orientation": "portrait",
+    "description": "SoundWave es una plataforma web desarrollada como proyecto integrado. Permite a los usuarios cargar archivos de audio y reproducirlos en cualquier momento y dispositivo. Además, ofrece la capacidad de crear y gestionar grupos para organizar los archivos por temas, categorías o preferencias individuales. Los administradores pueden iniciar sesión y acceder a un panel dedicado para gestionar usuarios, grupos y archivos de los usuarios.",
+    "icons": [
+        {
+            "src": "assets/img/icon.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg",
+            "purpose": "maskable"
+        }
+    ],
+    "prefer_related_applications": false
+}
