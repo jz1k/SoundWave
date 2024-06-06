@@ -1,4 +1,5 @@
 # SoundWave
+![SoundWave Logo](assets/img/logo.jpg)
 
 ## ¿Que es SoundWave?
 **SoundWave** es una plataforma web que actúa como almacenamiento y reproductor en 
@@ -54,7 +55,6 @@ Para ofrecer una visión clara y estructurada de todas las funcionalidades dispo
 - **Términos de Uso y Privacidad**
 - **Navegación**
 
-![SoundWave Logo](assets/img/logo.jpg)
 
 ## Términos de Uso y Privacidad
 
